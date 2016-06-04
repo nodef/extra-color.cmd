@@ -6,6 +6,9 @@ namespace orez.color {
 	class Program {
 
 		// data
+		/// <summary>
+		/// Color dictionary, which matches names with color codes.
+		/// </summary>
 		private static Dictionary<string, int> Code = new Dictionary<string, int> {
 			["black"] = 0, ["darkgray"] = 8,
 			["darkblue"] = 1, ["blue"] = 9,
