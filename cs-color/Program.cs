@@ -56,7 +56,11 @@ namespace orez.color {
 			if(val[0] == '+' || val[0] == '-') code += old;
 			return code;
 		}
-
+		/// <summary>
+		/// Get console color from color code.
+		/// </summary>
+		/// <param name="code">Integer color code.</param>
+		/// <returns>Console color.</returns>
 		private static ConsoleColor Color(int code) {
 			return (ConsoleColor)(((uint)code) & 0xF);
 		}
