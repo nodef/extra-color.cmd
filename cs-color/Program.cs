@@ -45,9 +45,8 @@ namespace orez.color {
 
 		}
 
-		private static ConsoleColor GetColor(int code) {
-			uint c = (uint)code;
-			return (ConsoleColor)(c & 0xF);
+		private static ConsoleColor Color(int code) {
+			return (ConsoleColor)(((uint)code) & 0xF);
 		}
 	}
 }
