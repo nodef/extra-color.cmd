@@ -9,15 +9,15 @@ namespace orez.color {
 		/// <summary>
 		/// Color dictionary, which matches names with color codes.
 		/// </summary>
-		private static Dictionary<string, int> CodeMap = new Dictionary<string, int> {
-			["black"] = 0, ["darkgray"] = 8,
-			["darkblue"] = 1, ["blue"] = 9,
-			["darkgreen"] = 2, ["green"] = 10,
-			["darkcyan"] = 3, ["cyan"] = 11,
-			["darkred"] = 4, ["red"] = 12,
-			["darkmagenta"] = 5, ["magenta"] = 13,
-			["darkyellow"] = 6, ["yellow"] = 14,
-			["gray"] = 7, ["white"] = 15
+		private static Dictionary<string, string> CodeMap = new Dictionary<string, string> {
+			["black"] = "0", ["darkgray"] = "8",
+			["darkblue"] = "1", ["blue"] = "9",
+			["darkgreen"] = "2", ["green"] = "10",
+			["darkcyan"] = "3", ["cyan"] = "11",
+			["darkred"] = "4", ["red"] = "12",
+			["darkmagenta"] = "5", ["magenta"] = "13",
+			["darkyellow"] = "6", ["yellow"] = "14",
+			["gray"] = "7", ["white"] = "15"
 		};
 
 		/// <summary>
