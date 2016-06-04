@@ -37,8 +37,3 @@ Get or set Cursor color in Windows Console.
 :: update cursor background color to next color
 > ocolor +0 +1
 ```
-
-
-## license
-
-Do you have a Poké ball? That's enough!
