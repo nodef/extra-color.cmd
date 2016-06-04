@@ -25,7 +25,6 @@ namespace orez.color {
 		/// </summary>
 		/// <param name="args">Input arguments.</param>
 		static void Main(string[] args) {
-			args = new string[] { };
 			// process input
 			var fs = args.Length >= 1 ? args[0] : "";
 			var bs = args.Length >= 2 ? args[1] : "";
