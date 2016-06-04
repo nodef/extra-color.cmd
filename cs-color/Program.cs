@@ -41,17 +41,16 @@ namespace orez.color {
 			}
 		}
 
-		private static int GetColorNum(string val, IDictionary<string, int> dict) {
-			return char.IsLetter(val[0])
+		private static int GetCode(string val, int old) {
+
 		}
 
-		/// <summary>
-		/// Get color dictionary, which matches names with numbers.
-		/// </summary>
-		/// <returns>Color dictionary.</returns>
-		private static IDictionary<string, string> ColorDict() {
-			return new Dictionary<string, string> {
-			};
+		private static ConsoleColor GetColor(string val, int old) {
+			int ans = old;
+			val = val.Length == 0 ? "+0" : val;
+			bool shft = val[0] == '+' || val[1] == '-';
+			
+			return (ConsoleColor)ans;
 		}
 	}
 }
