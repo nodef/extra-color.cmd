@@ -7,14 +7,14 @@ namespace orez.color {
 
 		// data
 		private static Dictionary<string, int> Code = new Dictionary<string, int> {
-			["black"] = "0", ["darkgray"] = "8",
-			["darkblue"] = "1", ["blue"] = "9",
-			["darkgreen"] = "2", ["green"] = "10",
-			["darkcyan"] = "3", ["cyan"] = "11",
-			["darkred"] = "4", ["red"] = "12",
-			["darkmagenta"] = "5", ["magenta"] = "13",
-			["darkyellow"] = "6", ["yellow"] = "14",
-			["gray"] = "7", ["white"] = "15"
+			["black"] = 0, ["darkgray"] = 8,
+			["darkblue"] = 1, ["blue"] = 9,
+			["darkgreen"] = 2, ["green"] = 10,
+			["darkcyan"] = 3, ["cyan"] = 11,
+			["darkred"] = 4, ["red"] = 12,
+			["darkmagenta"] = 5, ["magenta"] = 13,
+			["darkyellow"] = 6, ["yellow"] = 14,
+			["gray"] = 7, ["white"] = 15
 		};
 
 		/// <summary>
