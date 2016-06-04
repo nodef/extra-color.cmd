@@ -4,6 +4,11 @@ using System.Collections.Generic;
 
 namespace orez.color {
 	class Program {
+
+		/// <summary>
+		/// Like a sunflower...
+		/// </summary>
+		/// <param name="args">Input arguments.</param>
 		static void Main(string[] args) {
 			// constants
 			var clr = new Dictionary<string, string> {
