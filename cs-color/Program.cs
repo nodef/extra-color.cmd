@@ -5,13 +5,32 @@ using System.Collections.Generic;
 namespace orez.color {
 	class Program {
 
+		// data
+		private static Dictionary<string, int> Code = new Dictionary<string, int> {
+			["black"] = "0",
+			["darkgray"] = "8",
+			["darkblue"] = "1",
+			["blue"] = "9",
+			["darkgreen"] = "2",
+			["green"] = "10",
+			["darkcyan"] = "3",
+			["cyan"] = "11",
+			["darkred"] = "4",
+			["red"] = "12",
+			["darkmagenta"] = "5",
+			["magenta"] = "13",
+			["darkyellow"] = "6",
+			["yellow"] = "14",
+			["gray"] = "7",
+			["white"] = "15"
+		};
+
 		/// <summary>
 		/// Like a sunflower...
 		/// </summary>
 		/// <param name="args">Input arguments.</param>
 		static void Main(string[] args) {
-			// constants
-			var clr = GetColors();
+			var clr = ColorDict();
 			// process input
 			var f = (args.Length >= 1 ? args[0] : "+0").ToLower();
 			var b = (args.Length >= 2 ? args[1] : "+0").ToLower();
@@ -27,20 +46,16 @@ namespace orez.color {
 			}
 		}
 
+		private static int GetColorNum(string val, IDictionary<string, int> dict) {
+			return char.IsLetter(val[0])
+		}
+
 		/// <summary>
 		/// Get color dictionary, which matches names with numbers.
 		/// </summary>
 		/// <returns>Color dictionary.</returns>
-		private static IDictionary<string, string> GetColors() {
+		private static IDictionary<string, string> ColorDict() {
 			return new Dictionary<string, string> {
-				["black"] = "0", ["darkgray"] = "8",
-				["darkblue"] = "1", ["blue"] = "9",
-				["darkgreen"] = "2", ["green"] = "10",
-				["darkcyan"] = "3", ["cyan"] = "11",
-				["darkred"] = "4", ["red"] = "12",
-				["darkmagenta"] = "5", ["magenta"] = "13",
-				["darkyellow"] = "6", ["yellow"] = "14",
-				["gray"] = "7", ["white"] = "15"
 			};
 		}
 	}
