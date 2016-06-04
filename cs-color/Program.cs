@@ -25,14 +25,11 @@ namespace orez.color {
 		/// </summary>
 		/// <param name="args">Input arguments.</param>
 		static void Main(string[] args) {
-			var clr = ColorDict();
 			// process input
-			var f = (args.Length >= 1 ? args[0] : "+0").ToLower();
-			var b = (args.Length >= 2 ? args[1] : "+0").ToLower();
-			f = f.Length > 3 ? (clr.ContainsKey(f) ? clr[f] : "7") : f;
-			b = b.Length > 3 ? (clr.ContainsKey(b) ? clr[b] : "0") : b;
-			var fv = (int)((f[0] == '+' || f[0] == '-' ? Console.ForegroundColor : 0) + int.Parse(f));
-			var bv = (int)((b[0] == '+' || b[0] == '-' ? Console.BackgroundColor : 0) + int.Parse(b));
+			var fs = args.Length >= 1 ? args[0] : "";
+			var bs = args.Length >= 2 ? args[1] : "";
+      var f = GetColor(GetCode(fs, (int)Console.ForegroundColor));
+			var b = GetColor(GetCode(bs, (int)Console.BackgroundColor));
 			// get or set color
 			if(args.Length == 0) Console.WriteLine(fv + " " + bv);
 			else {
@@ -61,7 +58,7 @@ namespace orez.color {
 		/// </summary>
 		/// <param name="code">Integer color code.</param>
 		/// <returns>Console color.</returns>
-		private static ConsoleColor Color(int code) {
+		private static ConsoleColor GetColor(int code) {
 			return (ConsoleColor)(((uint)code) & 0xF);
 		}
 	}
