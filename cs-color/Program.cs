@@ -35,5 +35,18 @@ namespace orez.color {
 				Console.BackgroundColor = (ConsoleColor)((bv < 0 ? 0 : bv) % 16);
 			}
 		}
+
+		private static IDictionary<string, string> GetColors() {
+			return new Dictionary<string, string> {
+				["black"] = "0", ["darkgray"] = "8",
+				["darkblue"] = "1", ["blue"] = "9",
+				["darkgreen"] = "2", ["green"] = "10",
+				["darkcyan"] = "3", ["cyan"] = "11",
+				["darkred"] = "4", ["red"] = "12",
+				["darkmagenta"] = "5", ["magenta"] = "13",
+				["darkyellow"] = "6", ["yellow"] = "14",
+				["gray"] = "7", ["white"] = "15"
+			};
+		}
 	}
 }
