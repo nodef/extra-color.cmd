@@ -9,7 +9,7 @@ namespace orez.color {
 		/// <summary>
 		/// Color dictionary, which matches names with color codes.
 		/// </summary>
-		private static Dictionary<string, int> Code = new Dictionary<string, int> {
+		private static Dictionary<string, int> CodeMap = new Dictionary<string, int> {
 			["black"] = 0, ["darkgray"] = 8,
 			["darkblue"] = 1, ["blue"] = 9,
 			["darkgreen"] = 2, ["green"] = 10,
