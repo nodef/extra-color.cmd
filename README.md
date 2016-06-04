@@ -1,6 +1,6 @@
 # ocolor
 
-Get or set Cursor color in Windows Console
+Get or set Cursor color in Windows Console.
 
 
 ## usage
