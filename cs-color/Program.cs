@@ -31,11 +31,8 @@ namespace orez.color {
       var f = GetColor(GetCode(fs, (int)Console.ForegroundColor));
 			var b = GetColor(GetCode(bs, (int)Console.BackgroundColor));
 			// get or set color
-			if(args.Length == 0) Console.WriteLine(fv + " " + bv);
-			else {
-				Console.ForegroundColor = (ConsoleColor)((fv < 0 ? 0 : fv) % 16);
-				Console.BackgroundColor = (ConsoleColor)((bv < 0 ? 0 : bv) % 16);
-			}
+			if(args.Length == 0) Console.WriteLine(f + " " + b);
+			else { Console.ForegroundColor = f; Console.BackgroundColor = b; }
 		}
 
 		/// <summary>
