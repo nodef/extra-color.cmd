@@ -42,7 +42,11 @@ namespace orez.color {
 		}
 
 		private static int GetCode(string val, int old) {
-
+			int ans = 0;
+			val = (val.Length == 0 ? "+0" : val).ToLower();
+			if(char.IsDigit(val[0])) int.TryParse(val, out ans);
+			else ans = CodeMap.ContainsKey(val)? CodeMap[val] : ans;
+			return char.IsDigit(val[0]) ? int.Parse(val) : CodeMap[val];
 		}
 
 		private static ConsoleColor Color(int code) {
