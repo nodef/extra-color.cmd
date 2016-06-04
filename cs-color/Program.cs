@@ -45,12 +45,9 @@ namespace orez.color {
 
 		}
 
-		private static ConsoleColor GetColor(string val, int old) {
-			int ans = old;
-			val = val.Length == 0 ? "+0" : val;
-			bool shft = val[0] == '+' || val[1] == '-';
-			
-			return (ConsoleColor)ans;
+		private static ConsoleColor GetColor(int code) {
+			uint c = (uint)code;
+			return (ConsoleColor)(c & 0xF);
 		}
 	}
 }
