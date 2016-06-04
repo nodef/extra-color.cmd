@@ -4,6 +4,7 @@ using System.Collections.Generic;
 namespace orez.color {
 	class Program {
 		static void Main(string[] args) {
+			// constants
 			var clr = new Dictionary<string, string> {
 				["black"] = "0", ["darkgray"] = "8",
 				["darkblue"] = "1", ["blue"] = "9",
@@ -14,12 +15,14 @@ namespace orez.color {
 				["darkyellow"] = "6", ["yellow"] = "14",
 				["gray"] = "7", ["white"] = "15"
 			};
+			// process input
 			var f = (args.Length >= 1 ? args[0] : "+0").ToLower();
 			var b = (args.Length >= 2 ? args[1] : "+0").ToLower();
 			f = f.Length > 3 ? (clr.ContainsKey(f) ? clr[f] : "7") : f;
 			b = b.Length > 3 ? (clr.ContainsKey(b) ? clr[b] : "0") : b;
 			var fv = (int)((f[0] == '+' || f[0] == '-' ? Console.ForegroundColor : 0) + int.Parse(f));
 			var bv = (int)((b[0] == '+' || b[0] == '-' ? Console.BackgroundColor : 0) + int.Parse(b));
+			// get or set color
 			if(args.Length == 0) Console.WriteLine(fv + " " + bv);
 			else {
 				Console.ForegroundColor = (ConsoleColor)((fv < 0 ? 0 : fv) % 16);
