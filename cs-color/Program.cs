@@ -25,13 +25,14 @@ namespace orez.color {
 		/// </summary>
 		/// <param name="args">Input arguments.</param>
 		static void Main(string[] args) {
+			args = new string[] { };
 			// process input
 			var fs = args.Length >= 1 ? args[0] : "";
 			var bs = args.Length >= 2 ? args[1] : "";
       var f = GetColor(GetCode(fs, (int)Console.ForegroundColor));
 			var b = GetColor(GetCode(bs, (int)Console.BackgroundColor));
 			// get or set color
-			if(args.Length == 0) Console.WriteLine(f + " " + b);
+			if(args.Length == 0) Console.WriteLine((int)f + " " + (int)b);
 			else { Console.ForegroundColor = f; Console.BackgroundColor = b; }
 		}
 
