@@ -36,6 +36,10 @@ namespace orez.color {
 			}
 		}
 
+		/// <summary>
+		/// Get color dictionary, which matches names with numbers.
+		/// </summary>
+		/// <returns>Color dictionary.</returns>
 		private static IDictionary<string, string> GetColors() {
 			return new Dictionary<string, string> {
 				["black"] = "0", ["darkgray"] = "8",
