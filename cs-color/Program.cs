@@ -42,7 +42,12 @@ namespace orez.color {
 		}
 
 		private static int GetCode(string val, int old) {
+			int code = 0;
 			val = (val.Length == 0 ? "+0" : val).ToLower();
+			val = CodeMap.ContainsKey(val) ? CodeMap[val] : val;
+			int.TryParse(val, out code);
+			if(val[0] == '+' || val[0] == '-') code += old;
+			return code;
 		}
 
 		private static int GetCode(string val) {
