@@ -1,8 +1,8 @@
-﻿// OCOLOR - Get or set Cursor color in Windows Console
+﻿// ECOLOR - Get or set Cursor color in Windows Console
 using System;
 using System.Collections.Generic;
 
-namespace orez.color {
+namespace App {
 	class Program {
 
 		// data
