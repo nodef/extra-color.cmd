@@ -1,5 +1,5 @@
 Get or set Cursor color in Windows Console.
-> 1. Download [exe file](https://github.com/winp/extra-color/releases/download/1.0.0/ecolor.exe).
+> 1. Download [exe file](https://github.com/cmdf/extra-color/releases/download/1.0.0/ecolor.exe).
 > 2. Copy to `C:\Program_Files\Scripts`.
 > 3. Add `C:\Program_Files\Scripts` to `PATH` environment variable.
 
@@ -38,4 +38,4 @@ Get or set Cursor color in Windows Console.
 ```
 
 
-[![Merferry](https://i.imgur.com/2T3H86Y.jpg)](https://merferry.github.io)
+[![cmdf](https://i.imgur.com/2T3H86Y.jpg)](https://cmdf.github.io)
