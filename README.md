@@ -39,3 +39,4 @@ Get or set Cursor color in Windows Console.
 
 
 [![cmdf](https://i.imgur.com/2T3H86Y.jpg)](https://cmdf.github.io)
+![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/extra-color.cmd)
